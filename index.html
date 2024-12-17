@@ -1,92 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CognifAI Roadmaps</title>
+
     <style>
-        /* General Reset */
+        /* Basic Reset & Typography */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
         }
 
         body {
-            background-color: #f8f9fb;
+            background: #fafafa;
             color: #333;
+            line-height: 1.5;
         }
 
         /* Header */
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            background: white; /* Professional deep blue */
-            color: #fff;
-            padding: 10px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            background: linear-gradient(to right, #ffffff, #f1f1f1);
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
         }
 
         .header img {
-            height: 50px; /* Club logo size */
-        }
-
-        .header h1 {
-            font-size: 1.8rem;
-            font-weight: bold;
+            height: 50px;
+            display: block;
         }
 
         /* Content Section */
         .content {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 40px;
         }
 
         .iframe-container {
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
+            position: relative;
+            width: 100%;
+            border-radius: 6px;
             overflow: hidden;
+            border: 1px solid #ccc;
         }
 
-        iframe {
+        .iframe-container iframe {
             width: 100%;
-            height: 600px;
+            height: 800px;
             border: none;
         }
 
         /* Footer */
         .footer {
             text-align: center;
-            background-color: black;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
+            background: #000;
+            color: #fff;
+            padding: 15px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .content h2 {
+                font-size: 1.5rem;
+            }
+
+            .iframe-container iframe {
+                height: 600px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header with Club Logo -->
-    <header class="header" style="display: flex; justify-content: center; align-items: center;">
-        <img src="club-logo.png" alt="CognifAI Logo">
+    <header class="header">
+        <img src="club-logo.png" alt="CognifAI Logo" />
     </header>
 
-    <!-- Content Section -->
     <div class="content">
         <h2>The AI Roadmap</h2>
         <p>
-            Welcome to CognifAI's Roadmap Series 2024!
+            Welcome to CognifAI's Roadmap Series 2024! Discover the curated pathways to elevate your AI journey.
         </p>
 
-        <div class="iframe-container" style="width: 100%; height: 800px;">
-            <iframe src="https://roadmap.sh/r/embed?id=67613b4c8fe51199daa77179" style="width: 100%; height: 100%;"></iframe>
+        <div class="iframe-container">
+            <iframe src="https://roadmap.sh/r/embed?id=67613b4c8fe51199daa77179"></iframe>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         Credits for webpage: Kshitij
     </footer>
