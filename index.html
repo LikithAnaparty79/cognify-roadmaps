@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CognifAI Roadmaps</title>
 
     <style>
@@ -59,14 +59,16 @@
         .iframe-container {
             position: relative;
             width: 100%;
+            overflow-x: auto; /* Allow horizontal scrolling if content overflows */
             border-radius: 6px;
-            overflow: hidden;
             border: 1px solid #ccc;
         }
 
         .iframe-container iframe {
             width: 100%;
             height: 800px;
+            max-width: 100%; /* Prevents going out of bounds */
+            display: block; /* Ensures proper rendering */
             border: none;
         }
 
@@ -87,7 +89,7 @@
             }
 
             .iframe-container iframe {
-                height: 600px;
+                height: 400px; /* Reduce height for smaller screens */
             }
         }
     </style>
@@ -103,8 +105,8 @@
             Welcome to CognifAI's Roadmap Series 2024!
         </p>
 
-        <div class="iframe-container" style="width: 100%; height: 800px;">
-            <iframe src="https://roadmap.sh/r/embed?id=67613b4c8fe51199daa77179" style="width: 100%; height: 100%;"></iframe>
+        <div class="iframe-container">
+            <iframe src="https://roadmap.sh/r/embed?id=67613b4c8fe51199daa77179"></iframe>
         </div>
     </div>
 
